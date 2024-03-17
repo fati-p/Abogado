@@ -17,7 +17,7 @@
     <div >
     
     <div class="logo">
-        <a href=""><img src="https://tse1.mm.bing.net/th/id/OIG4.VzuFsBA_442l25cKJins?pid=ImgGn" width="100px"></a>
+        <a href=""><img src="https://tse1.mm.bing.net/th/id/OIG4.VzuFsBA_442l25cKJins?pid=ImgGnz" width="100px"></a>
         
     </div>
 
@@ -30,25 +30,92 @@
 
 </header>
 
-<hr>
 
-<h2 class="link">LEER MAS</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quam debitis odio iste exercitationem ea nam quo, quibusdam mollitia? Delectus hic nostrum, blanditiis nam incidunt quasi quaerat obcaecati quos magnam!</p>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore eos excepturi quis officiis optio quos earum mollitia explicabo error, id maiores odio neque fugit aut perferendis aliquam. Harum, blanditiis. Quo!</p>
+<div class="container">
+    <h2 class="link">LEER MAS</h2>
+    <div class="parrafos">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quam debitis odio iste exercitationem ea nam quo, quibusdam mollitia? Delectus hic nostrum, blanditiis nam incidunt quasi quaerat obcaecati quos magnam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore eos excepturi quis officiis optio quos earum mollitia explicabo error, id maiores odio neque fugit aut perferendis aliquam. Harum, blanditiis. Quo!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse harum quisquam similique quibusdam, incidunt, voluptatum nostrum, suscipit fugiat iure inventore alias reprehenderit sunt cum reiciendis? Fugiat blanditiis optio illo tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut atque exercitationem tempora, harum reiciendis sequi laudantium suscipit. Earum vel porro ullam, modi illum reprehenderit ab, laborum eveniet a nobis necessitatibus.</p>
+    </div>
+</div>
 
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse harum quisquam similique quibusdam, incidunt, voluptatum nostrum, suscipit fugiat iure inventore alias reprehenderit sunt cum reiciendis? Fugiat blanditiis optio illo tempore.</p>
 
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis aut fugiat ducimus magnam quas totam aliquid iste ratione, et harum eaque porro necessitatibus aliquam itaque adipisci. Eos ipsum quos fugit.</p>
+    
 
+<p>Navega al sitio web: Ingresa la URL del sitio web en tu navegador para acceder al sitio.
 
-    <style>
-      
-    </style>
-</head>
-<body>
+    Explora la página de inicio: La página de inicio generalmente ofrece una visión general de los servicios que ofrece la firma de abogados. Aquí puedes encontrar información sobre su experiencia, especialidades y filosofía de trabajo.
+    Conoce más sobre la firma: Visita la sección “Sobre nosotros” para obtener más detalles sobre la firma de abogados, como su historia, misión, valores y equipo de abogados.
+    Revisa los servicios ofrecidos: En la sección “Servicios”, puedes encontrar una lista detallada de los servicios legales que ofrece la firma. Cada servicio puede tener su propia subpágina con información más detallada.
+    Lee testimonios y casos de éxito: Algunos sitios web pueden tener una sección de testimonios o casos de éxito donde puedes leer sobre las experiencias de clientes anteriores y los resultados que la firma ha logrado.
+    Contacta a la firma: Si estás interesado en contratar sus servicios, puedes ir a la sección “Contacto” y llenar un formulario con tus datos y una descripción de tu caso. También puedes encontrar información de contacto como correo electrónico, número de teléfono y dirección física.
+    Programa una consulta: Muchas firmas de abogados ofrecen una primera consulta gratuita. Puedes programar esta consulta para discutir tu caso y obtener una mejor idea de cómo la firma puede ayudarte.
+    Contrata los servicios: Si después de la consulta decides que quieres contratar a la firma, ellos te guiarán a través del proceso de contratación y te explicarán los honorarios y el plan de trabajo.</p>
+
+<div class="cont">
+    <div class="card">
+        <h2>Servicio 1</h2>
+        <p>Descripción breve del servicio 1.</p>
+        <button id="btn1">Leer más</button>
+        <p id="more1" class="more-info">Información adicional sobre el servicio 1.</p>
+    </div>
+    <div class="card">
+        <h2>Servicio 2</h2>
+        <p>Descripción breve del servicio 2.</p>
+        <button id="btn2">Leer más</button>
+        <p id="more2" class="more-info">Información adicional sobre el servicio 2.</p>
+    </div>
+    <div class="card">
+        <h2>Servicio 3</h2>
+        <p>Descripción breve del servicio 3.</p>
+        <button id="btn3">Leer más</button>
+        <p id="more3" class="more-info">Información adicional sobre el servicio 3.</p>
+    </div>
+    <div class="card">
+        <h2>Servicio 4</h2>
+        <p>Descripción breve del servicio 4.</p>
+        <button id="btn4">Leer más</button>
+        <p id="more4" class="more-info">Información adicional sobre el servicio 4.</p>
+    </div>
+    <div class="card">
+        <h2>Servicio 5</h2>
+        <p>Descripción breve del servicio 5.</p>
+        <button id="btn5">Leer más</button>
+        <p id="more5" class="more-info">Información adicional sobre el servicio 5.</p>
+    </div>
+    <div class="card">
+        <h2>Servicio 6</h2>
+        <p>Descripción breve del servicio 6.</p>
+        <button id="btn6">Leer más</button>
+        <p id="more6" class="more-info">Información adicional sobre el servicio 6.</p>
+    </div>
+</div>
+
+<script>
+    let buttons = document.querySelectorAll("button");
+    
+  
+    buttons.forEach((button, index) => {
+        button.addEventListener("click", () => {
+           
+            let moreInfo = document.getElementById('more' + (index + 1));
+            
+           
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+            } else {
+                moreInfo.style.display = "none";
+            }
+        });
+    });
+    </script>
 
 
 <div class="footer">
-    <a href="#"><img src="logo.png" alt="Logo" style="width:42px;height:42px;"></a>
+    <a href="index.html"><img src="https://tse1.mm.bing.net/th/id/OIG4.VzuFsBA_442l25cKJins?pid=ImgGnz" width="60px" height="60px"></a>
     <a href="#contacto">Contacto</a> |
     <a href="https://www.facebook.com/tu-pagina">Facebook</a> |
     <a href="https://www.twitter.com/tu-pagina">Twitter</a> |
